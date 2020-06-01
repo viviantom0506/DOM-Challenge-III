@@ -1,5 +1,5 @@
 
-//function to add rows
+
 function addRow(){
   const TableElements = document.getElementById("Table")
   let NewRow = document.createElement("tr")
