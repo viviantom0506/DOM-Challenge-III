@@ -20,5 +20,19 @@
     <button onclick="fillColored()">Fill All Cell with Current</button>
     <button onclick="clear()">Clear, convert to initial color</button>
     <button onclick="hover()">Hoverover Effect</button>
+    <br><br>
+
+    <div>
+        <p>Select color: <span id="color-span"></span></p>
+        <div id="color-dropdown">
+          <div class="color" id="red" onclick="selectColor(this)"></div>
+          <div class="color" id="orange" onclick="selectColor(this)"></div>
+          <div class="color" id="yellow" onclick="selectColor(this)"></div>
+          <div class="color" id="green" onclick="selectColor(this)"></div>
+          <div class="color" id="blue" onclick="selectColor(this)"></div>
+          <div class="color" id="purple" onclick="selectColor(this)"></div>
+        </div><br>
+        <table id="table">
+        </table>
 </body>
 </html>
