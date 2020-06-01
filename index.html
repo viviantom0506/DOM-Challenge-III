@@ -2,30 +2,23 @@
 <html lang="en">
 <head>
     <link rel = "stylesheet" 
-	type="text/css" 
-	href="style.css"/>
+	type="text/css" />
+	<!-- href="style.css"/> -->
     <meta charset="UTF-8">
     <link ref = "stylesheet" href = style.css>
-    <script type="text/javascript" src="script.js"></script>
 </head>
 
 <body>
-
-
-    <div id="onClick" onClick="addRow()">
-        <button>Click me to add a row!</button>
-      </div>
-      <br>
-      <div id="onClick" onClick="addColumn()">
-        <button>Click me to add cells!</button>
-      </div><br>
-      <div id="onClick" onClick="removeRow()">
-        <button>Click me to remove rows!</button>
-      </div><br>
-      <div id="onClick" onClick="removeColumn()">
-        <button>Click me to remove cells!</button>
-      </div><br>
-
+    <button onclick="addRow()">Add A Row</button>
+    <button onclick="addColumn()">Add A Column</button>
+    <button onclick="removeRow()">Remove A Row</button>
+    <button onclick="removeColumn()">Remove A Column</button>
+    <button onclick="dropColor()">Color DropDown</button>
+    <button onclick="ColorCell()">Current Color cell</button>
+    <button onclick="fillUnColored()">Fill Uncolored with Current</button>
+    <button onclick="fillColored()">Fill All Cell with Current</button>
+    <button onclick="clear()">Clear, convert to initial color</button>
+    <button onclick="hover()">Hoverover Effect</button>
     <br><br>
 
     <div>
@@ -37,10 +30,9 @@
           <div class="color" id="green" onclick="selectColor(this)"></div>
           <div class="color" id="blue" onclick="selectColor(this)"></div>
           <div class="color" id="purple" onclick="selectColor(this)"></div>
-        </div>
-        <br>
-        <table id="table">
-        </table>
-        <script src="script.js"></script>
+    </div><br>
+    <table id="Table">
+    </table>
+    <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
