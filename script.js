@@ -1,4 +1,5 @@
 let columns = 1;
+//adds a row to table when the user clicks on add row button.
 function addRows(){
   let table = document.getElementById("Table");
   let tableRow = document.createElement("tr");
@@ -9,6 +10,7 @@ function addRows(){
     tableRow.appendChild(tableCell);
   }
 }
+//allows the user to add a column when the user clicks the add Column button
 function addColumns(){
   columns++;
   let rows = document.getElementsByClassName("row");
@@ -43,4 +45,4 @@ function removeColumn(){
     tr[i].removeChild(tr[i].lastChild);
   }
 }
-let selectedColor = "blue";""
+let selectedColor = "blue";
