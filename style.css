@@ -1,0 +1,15 @@
+
+#table {
+  border: 15px;
+  width: 75%;
+}
+tr {
+  border: 3px solid black;
+  background-color: white;
+  height: 75px; 
+  width: inherit;
+}
+td {
+  border: 3px solid black;
+  background-color: beige;
+}
