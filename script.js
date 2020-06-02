@@ -1,23 +1,3 @@
-
-function addRow(){
-  const TableElements = document.getElementById("Table")
-  let NewRow = document.createElement("tr")
-  TableElements.appendChild(NewRow);
-  NewRow.classList.add("row");
-  let column=1;
-  for(let i=0; i<column;i++){
-      let cell = document.createElement("td");
-      NewRow.appendChild(cell);
-      cell.textContent = "O";
-  }
-}
-
-function removeRow() {
-  let row = document.getElementsByClassName("row");
-  let tr = Array.from(row);
-  tr[tr.length - 1].parentNode.removeChild(tr[tr.length - 1]);
-}
-
 let columns = 1;
 function addRows(){
   let table = document.getElementById("Table");
@@ -38,6 +18,7 @@ function addColumns(){
     tr[i].appendChild(tableCell);
   }
 }
+//allows the user to remove 
 function removeRow(){
   let rows = document.getElementsByClassName("row");
   tr = [...rows];
@@ -49,6 +30,8 @@ function removeRow(){
     columns = 1;
   }
 }
+
+//allows the user to remove a column when the remove column button is pressed.
 function removeColumn(){
   if (columns == 1) {
     return;
@@ -60,4 +43,4 @@ function removeColumn(){
     tr[i].removeChild(tr[i].lastChild);
   }
 }
-let selectedColor = "blue";
+let selectedColor = "blue";""
