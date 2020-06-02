@@ -46,3 +46,28 @@ function removeColumn(){
   }
 }
 let selectedColor = "blue";
+const selectColor = (color) => {
+  selectedColor = color;
+};
+let isColored = false;
+function colorChange(tableCell) {
+  tableCell.classList.add("notColored");
+  tableCell.addEventListener("click", changeColor);
+  tableCell.addEventListener("mousedown", (e) => {
+    isColored = true;
+  });
+  tableCell.addEventListener("mousemove", (e) => {
+    if (isColored) {
+      tableCell.style.backgroundColor = selectedColor;
+    }
+  });
+  tableCell.addEventListener("mouseup", (e) => {
+    if (isColored) {
+      isColored = false;
+    }
+  });
+}
+function changeColor() {
+  this.style.backgroundColor = selectedColor;
+  this.classList.remove("notColored");
+}
