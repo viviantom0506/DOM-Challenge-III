@@ -22,7 +22,7 @@ function addColumns(){
     tr[i].appendChild(tableCell);
   }
 }
-//allows the user to remove the row with the remove row button
+//allows the user to remove
 function removeRow(){
   let rows = document.getElementsByClassName("row");
   tr = [...rows];
@@ -50,7 +50,7 @@ let selectedColor = "blue";
 const selectColor = (color) => {
   selectedColor = color;
 };
-
+//changes color of cells
 let isColored = false;
 function colorChange(tableCell) {
   tableCell.classList.add("notColored");
@@ -72,7 +72,6 @@ function colorChange(tableCell) {
 function changeColor() {
   this.style.backgroundColor = selectedColor;
   this.classList.remove("notColored");
-
 }
 //fills uncolored cells
 function fillUncolored() {
@@ -104,5 +103,3 @@ function clearAll() {
       tableCell.classList.add("notColored");
     });
   }
-
-
