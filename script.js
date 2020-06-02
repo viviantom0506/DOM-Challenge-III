@@ -50,7 +50,10 @@ let selectedColor = "blue";
 const selectColor = (color) => {
   selectedColor = color;
 };
+<<<<<<< HEAD
 //changes color of cells
+=======
+>>>>>>> 4da7205c1b53acc84f32b33d82b08f6f3ece53e4
 let isColored = false;
 function colorChange(tableCell) {
   tableCell.classList.add("notColored");
@@ -72,6 +75,7 @@ function colorChange(tableCell) {
 function changeColor() {
   this.style.backgroundColor = selectedColor;
   this.classList.remove("notColored");
+<<<<<<< HEAD
 }
 //fills uncolored cells
 function fillUncolored() {
@@ -103,3 +107,6 @@ function clearAll() {
       tableCell.classList.add("notColored");
     });
   }
+=======
+}
+>>>>>>> 4da7205c1b53acc84f32b33d82b08f6f3ece53e4
