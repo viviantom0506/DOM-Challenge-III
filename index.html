@@ -1,38 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel = "stylesheet" 
-	type="text/css" />
-	<!-- href="style.css"/> -->
-    <meta charset="UTF-8">
-    <link ref = "stylesheet" href = style.css>
-</head>
-
-<body>
-    <button onclick="addRow()">Add A Row</button>
-    <button onclick="addColumn()">Add A Column</button>
-    <button onclick="removeRow()">Remove A Row</button>
-    <button onclick="removeColumn()">Remove A Column</button>
-    <button onclick="dropColor()">Color DropDown</button>
-    <button onclick="ColorCell()">Current Color cell</button>
-    <button onclick="fillUnColored()">Fill Uncolored with Current</button>
-    <button onclick="fillColored()">Fill All Cell with Current</button>
-    <button onclick="clear()">Clear, convert to initial color</button>
-    <button onclick="hover()">Hoverover Effect</button>
-    <br><br>
-
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div id="buttons-div">
+      <div>
+        <button onClick="addRows()">Add a row</button>
+      </div>
+      <br>
+      <div>
+        <button onClick="addColumns()">Add a column</button>
+      </div>
+      <br>
+      <div>
+        <button onClick="removeRow()">Remove a row</button>
+      </div>
+      <br>
+      <div>
+        <button onClick="removeColumn()">Remove a column</button>
+      </div>
+      <br>
+      <div>
+        <button onClick="fillUncolored()">Fill uncolored cells</button>
+      </div>
+      <br>
+      <div>
+        <button onClick="fillAll()">Color all cells</button>
+      </div>
+      <br>
+      <div>
+         <button onClick="clearAll()">Clear all cells</button>
+       </div>
+    </div>
+    <br>
     <div>
-        <p>Select color: <span id="color-span"></span></p>
-        <div id="color-dropdown">
-          <div class="color" id="red" onclick="selectColor(this)"></div>
-          <div class="color" id="orange" onclick="selectColor(this)"></div>
-          <div class="color" id="yellow" onclick="selectColor(this)"></div>
-          <div class="color" id="green" onclick="selectColor(this)"></div>
-          <div class="color" id="blue" onclick="selectColor(this)"></div>
-          <div class="color" id="purple" onclick="selectColor(this)"></div>
-    </div><br>
-    <table id="Table">
-    </table>
-    <script type="text/javascript" src="script.js"></script>
-</body>
+      <br />
+      <span>Choose a color:</span>
+      <select onchange="selectColor(this.value)">
+        <option value="blue">Blue</option>
+        <option value="red">Red</option>
+        <option value="green">Green</option>
+        <option value="grey">Grey</option>
+        <option value="pink">Pink</option>
+      </select>
+    </div>
+    <br />
+
+    <table id="Table"></table>
+
+    <script src="script.js"></script>
+  </body>
 </html>
